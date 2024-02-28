@@ -60,12 +60,10 @@ export function isValid(question: Question, answer: string): boolean {
  * name "My First Question" would become "9: My First Q".
  */
 export function toShortForm(question: Question): string {
-    let questionAmount = "";
-    if (question.name.length >= 9) {
-        questionAmount = question.name.substring(0, 10);
-    } else {
-        questionAmount = question.name;
-    }
+    const questionAmount =
+        question.name.length >= 9
+            ? question.name.substring(0, 10)
+            : question.name;
 
     return question.id + ": " + questionAmount;
 }
