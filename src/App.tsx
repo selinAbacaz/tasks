@@ -1,82 +1,30 @@
 import React from "react";
 import "./App.css";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
+import { Counter } from "./components/Counter";
 
 function App(): JSX.Element {
     return (
-        <div style={{ border: "1px solid blue", padding: "12px" }}>
-            <div className="App">
-                <header className="App-header">
-                    UD CISC275 with React Hooks and TypeScript
-                    <h1>Really Big Header !!! </h1>
-                </header>
-                <p> Editted by Selin Bacaz, Hello World !! </p>
-
-                <Container>
-                    <Row>
-                        <Col
-                            style={{
-                                backgroundColor: "orange",
-                                color: "white"
-                            }}
-                        >
-                            <div
-                                style={{
-                                    width: "600px",
-                                    height: "8px",
-                                    backgroundColor: "red"
-                                }}
-                            ></div>
-                            <img
-                                src={require("./assets/tiny dtrawberry flipped transparent png.png")}
-                                alt="A flipped strawberry"
-                            />
-                            <ul>
-                                <li>Fun fact: I drew the strawberry</li>
-                                <li>Also I coded this text</li>
-                                <li>
-                                    Which is, in my opinion, pretty cute :){" "}
-                                </li>
-                                <li>
-                                    Uhhhhhhhhh more strawberries to come
-                                    probably{" "}
-                                </li>
-                            </ul>
-                        </Col>
-                        <Col
-                            style={{ backgroundColor: "pink", color: "white" }}
-                        >
-                            <div
-                                style={{
-                                    width: "600px",
-                                    height: "8px",
-                                    backgroundColor: "red"
-                                }}
-                            ></div>
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <p> ⬤ </p>
-                            <p> ⬤ </p>
-                            <p> ⬤ </p>
-                            <Button
-                                style={{
-                                    backgroundColor: "green",
-                                    color: "white"
-                                }}
-                                onClick={() => console.log("Hello World!")}
-                            >
-                                Log Hello World
-                            </Button>
-                            <p> ⬤ </p>
-                            <p> ⬤ </p>
-                            <p> ⬤ </p>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+        <div className="App">
+            <header className="App-header">
+                UD CISC275 with React Hooks and TypeScript
+            </header>
+            <hr></hr>
+            <Counter></Counter>
+            <hr />
+            <RevealAnswer></RevealAnswer>
+            <hr />
+            <StartAttempt></StartAttempt>
+            <hr />
+            <TwoDice></TwoDice>
+            <hr />
+            <ChangeType></ChangeType>
+            <hr />
+            <CycleHoliday></CycleHoliday>
         </div>
     );
 }
