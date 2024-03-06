@@ -31,15 +31,6 @@ function App(): JSX.Element {
 
 /**
 //npm run start to start the website from this terminal
-//Add a header
-//Add an image with alt text
-//Add a list with at least three elements
-//Change the background color of the header area
-//Add a bootstrap button with the text Log Hello World
-//Make the button log Hello World! when clicked
-
-//Have a two-column layout on the page somwhere
-Put a red-filled rectangle in each column using a div tag with width, height, and backgroundColor styles.
 */
 
 export default App;
