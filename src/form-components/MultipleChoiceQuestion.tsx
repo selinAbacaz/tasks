@@ -23,7 +23,7 @@ export function MultipleChoiceQuestion({
                 <Form.Group controlId="userEmotions">
                     <Form.Label>Which is Correct?</Form.Label>
                     <Form.Select value={answer} onChange={updateAnswer}>
-                        {options.map((option: string, index) => (
+                        {options.map((option: string) => (
                             <option key={option} value={option}>
                                 {option}
                             </option>

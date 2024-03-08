@@ -24,7 +24,7 @@ export function ChangeColor(): JSX.Element {
         <div>
             <h3>Change Color</h3>
             <Form style={{ display: "flex", justifyContent: "center" }}>
-                {colors.map((color: string, index) => (
+                {colors.map((color: string) => (
                     <Form.Check
                         key={color}
                         type="radio"
